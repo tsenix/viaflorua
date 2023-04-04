@@ -1102,6 +1102,17 @@ h6 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc(50% - 10px);
           flex: 0 0 calc(50% - 10px);
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.category__item-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1109,6 +1120,10 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .category__image {
@@ -1223,6 +1238,10 @@ h6 {
   display: none;
 }
 
+.product__slider-button {
+  cursor: pointer;
+}
+
 .product__slider-button-next {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
@@ -1291,6 +1310,16 @@ h6 {
   color: #E6FAF0;
   background: #1F2748;
   border-radius: 5px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.product__button svg {
+  fill: #E6FAF0;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .product__description-name {
@@ -1479,6 +1508,9 @@ h6 {
   background: #1F2748;
   border-radius: 5px;
   cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .contacts {
@@ -2095,6 +2127,15 @@ h6 {
             flex: 0 0 calc(25% - 15px);
   }
 
+  .category__item:hover {
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .category__item:hover .category__item-wrapper {
+    padding: 0 10px;
+  }
+
   .category__name {
     font-size: 18px;
   }
@@ -2130,6 +2171,15 @@ h6 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 410px;
             flex: 0 0 410px;
+  }
+
+  .product__button:hover {
+    color: #1F2748;
+    background-color: #E6FAF0;
+  }
+
+  .product__button:hover svg {
+    fill: #1F2748;
   }
 
   .basket {
@@ -2176,6 +2226,11 @@ h6 {
   .scsh_cart_view_right .catform_bc {
     margin-top: 50px;
     text-align: center;
+  }
+
+  .scsh_cart_view_right .catform_bc .catform_sb:hover {
+    color: #1F2748;
+    background-color: #E6FAF0;
   }
 
   .contacts {

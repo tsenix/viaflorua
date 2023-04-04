@@ -207,10 +207,6 @@ h6 {
   transition: all 0.5s ease;
 }
 
-.header__link svg .fill {
-  fill: #1F2748;
-}
-
 .header__link.subtitle._active {
   color: #28F991;
 }
@@ -467,7 +463,8 @@ h6 {
 }
 
 .menu__link img {
-  width: 16px;
+  width: 22px;
+  height: 22px;
 }
 
 .footer {
@@ -1898,10 +1895,6 @@ h6 {
 
   .header__link:hover svg {
     stroke: #28F991;
-  }
-
-  .header__link:hover svg .fill {
-    fill: #28F991;
   }
 
   .header__subtitle-link:hover {
